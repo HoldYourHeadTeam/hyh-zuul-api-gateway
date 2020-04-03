@@ -21,8 +21,6 @@ public class AccessTokenResolverImpl extends AbstractTokenResolver implements To
 
     private static final String REQUEST_TOKEN_ATTRIBUTE_KEY = "Authorization";
 
-
-
     /**
      * Method that obtain user information from token.
      *
