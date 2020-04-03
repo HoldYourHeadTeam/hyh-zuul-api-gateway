@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE}
+  application:
+    name: uplan-zuul-api-gateway
+  cloud:
+    config:
+      uri: ${UPLAN_CONFIG_SERVER_URL}
