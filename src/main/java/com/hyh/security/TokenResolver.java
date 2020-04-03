@@ -1,4 +1,4 @@
-package com.uplan.security;
+package com.hyh.security;
 
 import io.jsonwebtoken.Claims;
 import org.springframework.security.core.Authentication;

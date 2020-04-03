@@ -1,6 +1,6 @@
-package com.uplan.security;
+package com.hyh.security;
 
-import com.uplan.security.impl.JwtUser;
+import com.hyh.security.impl.JwtUser;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;

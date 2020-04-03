@@ -1,5 +1,5 @@
 
-package com.uplan.security;
+package com.hyh.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
@@ -7,7 +7,6 @@ import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.impl.compression.DefaultCompressionCodecResolver;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 
 import javax.annotation.PostConstruct;
 import java.time.ZoneId;
@@ -21,8 +20,7 @@ public abstract class AbstractTokenResolver implements TokenResolver {
 
     protected static final String TIME_ZONE_CLAIM = "timeZone";
 
-    @Value("${jwt.token.secret}")
-    protected String secret;
+    protected String secret = "kbob123321";
 
     @PostConstruct
     protected void init() {

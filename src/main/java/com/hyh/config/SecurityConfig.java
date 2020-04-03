@@ -1,8 +1,8 @@
-package com.uplan.config;
+package com.hyh.config;
 
 import brave.Tracing;
-import com.uplan.filter.AuthSecurityFilter;
-import com.uplan.security.impl.AccessTokenResolverImpl;
+import com.hyh.filter.AuthSecurityFilter;
+import com.hyh.security.impl.AccessTokenResolverImpl;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String ADMIN_ENDPOINT = "/api/v1/admin/**";
-    private static final String LOGIN_ENDPOINT = "/uplan-auth-service/api/v1/**";
+    private static final String LOGIN_ENDPOINT = "/hyh-auth-service/api/v1/**";
 
     private final AccessTokenResolverImpl jwtAccessTokenResolverImpl;
     private final Tracing tracing;

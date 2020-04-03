@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: ${ACTIVE_PROFILE}
+    active: ${ACTIVE_PROFILE:default}
   application:
-    name: uplan-zuul-api-gateway
+    name: hyh-zuul-api-gateway
   cloud:
     config:
-      uri: ${UPLAN_CONFIG_SERVER_URL}
+      uri: ${HYH_CONFIG_SERVER_URL:http://localhost:8888}

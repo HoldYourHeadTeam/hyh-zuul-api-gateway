@@ -1,4 +1,4 @@
-package com.uplan.security.impl;
+package com.hyh.security.impl;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;

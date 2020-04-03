@@ -1,12 +1,12 @@
-package com.uplan.filter;
+package com.hyh.filter;
 
 import brave.Tracing;
 import brave.propagation.ExtraFieldPropagation;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.uplan.security.ContextUser;
-import com.uplan.security.TokenResolver;
-import com.uplan.security.impl.JwtUser;
+import com.hyh.security.ContextUser;
+import com.hyh.security.TokenResolver;
+import com.hyh.security.impl.JwtUser;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;

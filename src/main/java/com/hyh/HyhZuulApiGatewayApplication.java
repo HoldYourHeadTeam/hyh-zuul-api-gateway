@@ -1,4 +1,4 @@
-package com.uplan;
+package com.hyh;
 
 import brave.sampler.Sampler;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 @EnableZuulProxy
 @EnableDiscoveryClient
 @SpringBootApplication
-public class UplanZuulApiGatewayApplication {
+public class HyhZuulApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UplanZuulApiGatewayApplication.class, args);
+		SpringApplication.run(HyhZuulApiGatewayApplication.class, args);
 	}
 
 	@Bean

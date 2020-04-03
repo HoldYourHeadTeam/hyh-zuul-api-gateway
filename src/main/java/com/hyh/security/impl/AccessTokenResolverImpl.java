@@ -1,7 +1,7 @@
-package com.uplan.security.impl;
+package com.hyh.security.impl;
 
-import com.uplan.security.AbstractTokenResolver;
-import com.uplan.security.TokenResolver;
+import com.hyh.security.AbstractTokenResolver;
+import com.hyh.security.TokenResolver;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,6 +20,8 @@ import java.util.stream.Collectors;
 public class AccessTokenResolverImpl extends AbstractTokenResolver implements TokenResolver {
 
     private static final String REQUEST_TOKEN_ATTRIBUTE_KEY = "Authorization";
+
+
 
     /**
      * Method that obtain user information from token.

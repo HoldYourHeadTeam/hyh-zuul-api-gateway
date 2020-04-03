@@ -14,6 +14,6 @@ RUN cd /usr/local  && \
 
 ENV GRADLE_HOME=/usr/local/gradle-5.6.4
 ENV PATH=$PATH:$GRADLE_HOME/bin
-COPY . uplan-zuul-api-gateway
-RUN cd /uplan-zuul-api-gateway && ls && chmod +x gradle  && gradle build -x test
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=dev","/uplan-zuul-api-gateway/build/libs/uplan-zuul-api-gateway-0.0.1-SNAPSHOT.jar"]
+COPY . hyh-zuul-api-gateway
+RUN cd /hyh-zuul-api-gateway && ls && chmod +x gradle  && gradle build -x test
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=dev","/hyh-zuul-api-gateway/build/libs/hyh-zuul-api-gateway-0.0.1-SNAPSHOT.jar"]
